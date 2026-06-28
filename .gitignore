@@ -1,0 +1,35 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# NovaGuard runtime artifacts
+logs/*.jsonl
+results/*.json
+results/*.csv
+reports/figures/*.png
+
+# Selenium / WebDriver
+chromedriver*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

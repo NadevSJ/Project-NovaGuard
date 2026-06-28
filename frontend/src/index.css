@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nova-dark text-nova-light font-sans antialiased;
+  }
+
+  * {
+    @apply border-nova-border;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1C1C1E;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3C3C3E;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E8470A;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-nova-orange hover:bg-nova-orange-light active:bg-nova-orange-dark
+           text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-nova-orange focus:ring-offset-2
+           focus:ring-offset-nova-dark disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply border border-nova-orange text-nova-orange hover:bg-nova-orange hover:text-white
+           font-semibold px-6 py-2.5 rounded-lg transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-nova-orange focus:ring-offset-2
+           focus:ring-offset-nova-dark disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply text-nova-muted hover:text-nova-light hover:bg-nova-slate
+           px-4 py-2 rounded-lg transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-nova-slate border border-nova-border rounded-xl p-6;
+  }
+
+  .input-field {
+    @apply w-full bg-nova-dark border border-nova-border text-nova-light rounded-lg px-4 py-3
+           placeholder-nova-muted focus:outline-none focus:border-nova-orange focus:ring-1
+           focus:ring-nova-orange transition-colors duration-200;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-nova-muted mb-2;
+  }
+
+  .badge-red {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold
+           bg-red-500/20 text-red-400 border border-red-500/30;
+  }
+
+  .badge-yellow {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold
+           bg-yellow-500/20 text-yellow-400 border border-yellow-500/30;
+  }
+
+  .badge-green {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold
+           bg-green-500/20 text-green-400 border border-green-500/30;
+  }
+}

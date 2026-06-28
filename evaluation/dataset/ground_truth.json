@@ -1,0 +1,540 @@
+{
+  "metadata": {
+    "dataset_name": "NovaGuard Ground Truth",
+    "version": "1.0",
+    "created": "2026-05-19T15:54:35+00:00",
+    "description": "Combined ground-truth dataset for evaluating NovaGuard. Aggregates verified phishing URLs (PhishTank, OpenPhish), the UCI SMS Spam Collection, and manually curated Sri Lankan samples derived from CERT.LK advisories.",
+    "total_samples": 31,
+    "label_distribution": {
+      "SCAM": 25,
+      "SAFE": 6
+    },
+    "type_distribution": {
+      "url": 21,
+      "text": 10
+    },
+    "source_list": [
+      "CERT.LK-manual",
+      "OpenPhish",
+      "PhishTank"
+    ],
+    "curation_notes": "Curation: sha1 dedup on first 150 chars; quality filter (15 <= len(input) <= 3000, must contain alphabetic chars); class balancing with seed=42; IDs reassigned as REAL-####."
+  },
+  "samples": [
+    {
+      "id": "REAL-0001",
+      "input_type": "url",
+      "input": "https://www.trezrr-start.blogspot.com/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0009"
+    },
+    {
+      "id": "REAL-0002",
+      "input_type": "url",
+      "input": "https://trezuriostart.blogspot.com/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0023"
+    },
+    {
+      "id": "REAL-0003",
+      "input_type": "url",
+      "input": "https://1rdq5f2.sbs/ylprzghg/jniolM/l8xV3O",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428283"
+    },
+    {
+      "id": "REAL-0004",
+      "input_type": "url",
+      "input": "http://www.ly-yes.games/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0010"
+    },
+    {
+      "id": "REAL-0005",
+      "input_type": "url",
+      "input": "https://0wk347ye.top/ylprzghg/jniolM/l8xV3O",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428270"
+    },
+    {
+      "id": "REAL-0006",
+      "input_type": "url",
+      "input": "http://dpd.rqmvzt.cfd/com",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0015"
+    },
+    {
+      "id": "REAL-0007",
+      "input_type": "url",
+      "input": "https://3qtfw25.lat/ylprzghg/jniolM/l8xV3O",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428314"
+    },
+    {
+      "id": "REAL-0008",
+      "input_type": "url",
+      "input": "https://techyguy.co.bw/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0006"
+    },
+    {
+      "id": "REAL-0009",
+      "input_type": "url",
+      "input": "http://dpd.gqwmtrx.cyou/com",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0017"
+    },
+    {
+      "id": "REAL-0010",
+      "input_type": "url",
+      "input": "https://myshop-points.yachts/ms/home.html",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428256"
+    },
+    {
+      "id": "REAL-0011",
+      "input_type": "url",
+      "input": "https://spport1mai1.webcindario.com/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428296"
+    },
+    {
+      "id": "REAL-0012",
+      "input_type": "text",
+      "input": "Peoples Bank Notice: Suspicious login detected on your account. Confirm your identity at https://peoples-bank-lk.com/secure within 12 hours to avoid permanent suspension.",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        86,
+        100
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "fake_bank_sms",
+      "red_flags": [
+        "Impersonates People's Bank",
+        "Domain peoples-bank-lk.com (real: peoplesbank.lk)",
+        "12-hour deadline (urgency)",
+        "Threat of permanent suspension"
+      ],
+      "notes": "Identity-confirmation pretext, common in late-night blast SMS.",
+      "source_id": "CERTLK-BANK-004"
+    },
+    {
+      "id": "REAL-0013",
+      "input_type": "url",
+      "input": "https://flerine.hoslint.fr/redre/redir.php/?email=alor7@e19321315905222902645edd2aa1740a4f97.com",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0019"
+    },
+    {
+      "id": "REAL-0014",
+      "input_type": "url",
+      "input": "https://myshop-points.boats/ms/home.html",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428258"
+    },
+    {
+      "id": "REAL-0015",
+      "input_type": "url",
+      "input": "http://notifyhubss.net/5296be205e47db40576a96a4e6bqd7449634.html",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0002"
+    },
+    {
+      "id": "REAL-0016",
+      "input_type": "url",
+      "input": "https://umitcappadocia.com/bhfcuonline/spgbuck/files/css/mn/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0022"
+    },
+    {
+      "id": "REAL-0017",
+      "input_type": "url",
+      "input": "https://1fr2t2twy.top/ylprzghg/jniolM/l8xV3O",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428279"
+    },
+    {
+      "id": "REAL-0018",
+      "input_type": "url",
+      "input": "http://dpd.jplwnzr.ink/com",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0016"
+    },
+    {
+      "id": "REAL-0019",
+      "input_type": "text",
+      "input": "Government Job Notification: 1500 vacancies in Sri Lanka Postal Department. Apply with NIC at http://sl-gov-jobs.info. Application fee Rs.500.",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        95
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "fake_govt_job",
+      "red_flags": [
+        "Pretends to be a Sri Lankan government recruitment",
+        ".info domain — real notices are on .gov.lk",
+        "Application fee paid via link",
+        "No official Gazette reference"
+      ],
+      "notes": "Fake government recruitment exploiting graduate unemployment.",
+      "source_id": "CERTLK-JOB-003"
+    },
+    {
+      "id": "REAL-0020",
+      "input_type": "url",
+      "input": "https://www.dpd.com.sxnckj.com/ksfCEoOuaa",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428324"
+    },
+    {
+      "id": "REAL-0021",
+      "input_type": "text",
+      "input": "Mobitel: You won 10 GB free data! Click here to activate: http://mobitel-freedata.tk before midnight.",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        95
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "fake_telco_prize",
+      "red_flags": [
+        "Impersonates Mobitel",
+        "Free-data lure with deadline",
+        ".tk TLD (free, frequently abused)",
+        "No official Mobitel short code"
+      ],
+      "notes": "Free-data phishing template circulated on Facebook in 2024.",
+      "source_id": "CERTLK-TELCO-002"
+    },
+    {
+      "id": "REAL-0022",
+      "input_type": "url",
+      "input": "http://gemini-login-account.gitbook.io/",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        80,
+        100
+      ],
+      "source": "OpenPhish",
+      "source_verified": true,
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "OP-0013"
+    },
+    {
+      "id": "REAL-0023",
+      "input_type": "url",
+      "input": "https://26g3t4.lat/ylprzghg/jniolM/l8xV3O",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428292"
+    },
+    {
+      "id": "REAL-0024",
+      "input_type": "text",
+      "input": "Sampath Bank Alert: Your online banking has been blocked. Reactivate immediately by confirming your NIC and password at https://sampath-secure.online/login",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        88,
+        100
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "fake_bank_sms",
+      "red_flags": [
+        "Impersonates Sampath Bank",
+        "Requests NIC + password through link",
+        "Domain sampath-secure.online (real domain is sampath.lk)",
+        "Urgency: 'immediately'"
+      ],
+      "notes": "Lookalike domain on .online TLD targeting Sampath customers.",
+      "source_id": "CERTLK-BANK-002"
+    },
+    {
+      "id": "REAL-0025",
+      "input_type": "url",
+      "input": "https://1yg2y2.cfd/ylprzghg/jniolM/l8xV3O",
+      "ground_truth_label": "SCAM",
+      "ground_truth_score_range": [
+        85,
+        100
+      ],
+      "source": "PhishTank",
+      "source_verified": true,
+      "target_brand": "Other",
+      "requires_selenium": true,
+      "category": "generic_phishing",
+      "source_id": "PT-9428290"
+    },
+    {
+      "id": "REAL-0026",
+      "input_type": "text",
+      "input": "BOC: Debit of LKR 5,250.00 on 12/05/2026 at KEELLS COLOMBO 03. Avail Bal LKR 48,300.50. Ref: TXN20260512A. Helpline: 1916.",
+      "ground_truth_label": "SAFE",
+      "ground_truth_score_range": [
+        0,
+        10
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "legitimate_bank_sms",
+      "red_flags": [],
+      "notes": "Normal debit notification: real merchant name, reference number, and the official BOC helpline 1916. No link, no PIN request.",
+      "source_id": "CERTLK-LEGIT-BANK-001"
+    },
+    {
+      "id": "REAL-0027",
+      "input_type": "text",
+      "input": "Sampath Bank: Your salary credit of LKR 125,000.00 received on 01/05/2026. Ref: SAL20260501. For details call 011-2-303030.",
+      "ground_truth_label": "SAFE",
+      "ground_truth_score_range": [
+        0,
+        8
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "legitimate_bank_sms",
+      "red_flags": [],
+      "notes": "Standard salary credit alert with official Sampath hotline.",
+      "source_id": "CERTLK-LEGIT-BANK-002"
+    },
+    {
+      "id": "REAL-0028",
+      "input_type": "text",
+      "input": "Commercial Bank: Card-not-present transaction of USD 9.99 on 08/05/2026 at NETFLIX. If not authorised, call 011-2-486-486.",
+      "ground_truth_label": "SAFE",
+      "ground_truth_score_range": [
+        0,
+        12
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "legitimate_bank_sms",
+      "red_flags": [],
+      "notes": "Real card-not-present alert; provides the bank's verified hotline rather than a link.",
+      "source_id": "CERTLK-LEGIT-BANK-003"
+    },
+    {
+      "id": "REAL-0029",
+      "input_type": "text",
+      "input": "Dialog: Your prepaid reload of LKR 500 was successful on 10/05/2026. New balance LKR 612.40. Dial #100# for account info.",
+      "ground_truth_label": "SAFE",
+      "ground_truth_score_range": [
+        0,
+        8
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "legitimate_telco_sms",
+      "red_flags": [],
+      "notes": "Standard reload confirmation; no link, references official USSD code.",
+      "source_id": "CERTLK-LEGIT-SVC-001"
+    },
+    {
+      "id": "REAL-0030",
+      "input_type": "text",
+      "input": "Mobitel: Your monthly bill of LKR 2,450 has been generated. Pay before 25/05/2026. Dial 1717 or visit mobitel.lk.",
+      "ground_truth_label": "SAFE",
+      "ground_truth_score_range": [
+        0,
+        10
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "legitimate_telco_sms",
+      "red_flags": [],
+      "notes": "Bill reminder with the canonical mobitel.lk domain and 1717 hotline.",
+      "source_id": "CERTLK-LEGIT-SVC-002"
+    },
+    {
+      "id": "REAL-0031",
+      "input_type": "text",
+      "input": "CEB: Your electricity bill for April 2026 is LKR 4,120. Due date 20/05/2026. Pay at ceb.lk or any CEB branch. Acc No: 0123456789.",
+      "ground_truth_label": "SAFE",
+      "ground_truth_score_range": [
+        0,
+        10
+      ],
+      "source": "CERT.LK-manual",
+      "source_verified": true,
+      "requires_selenium": false,
+      "category": "legitimate_utility_sms",
+      "red_flags": [],
+      "notes": "Routine CEB electricity bill notice using the official ceb.lk domain.",
+      "source_id": "CERTLK-LEGIT-SVC-003"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[server]
+# Allow Streamlit to keep the browser connection alive during long investigations.
+# DeepSeek-V4 + Selenium can take 1-5 minutes per request.
+maxUploadSize = 10
+enableXsrfProtection = true
+
+[browser]
+# Suppress the "you are connected to the internet" warning
+gatherUsageStats = false
